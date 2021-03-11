@@ -1,0 +1,112 @@
+/*style.css
+/*표준 글꼴 서식 스타일*/
+#mbar a{
+		text-decoration: none;
+		color: #D5441C;
+	
+	}
+	#mbar>td{
+		background-color:#013C4D;
+		width: 25%;
+		padding-bottom: 15px;
+	}
+	#log a{
+		text-decoration: none;
+		color:  #D5441C;
+		font-weight: bold;
+	}
+	table{
+		margin: auto;
+		border-collapse: collapse;
+	}
+	body{
+		background-color: lightyellow;
+		
+	}
+	#log{
+		padding:1%
+	}
+	#mainTable{
+		text-align: center;
+	}
+	.tt{
+    	color: #D5441C;
+    	font-weight: bold;
+    	background-color: #013C4D;    	
+    }
+    .tt a{
+    	text-decoration: none;
+    	color: #D5441C;
+    }
+    #t1{
+	width: 1000px;
+	text-align: center;
+	font-size: large;
+	
+	}
+    .t2{
+    	color: #013C4D;
+    		
+    }
+    .videowrapper {
+		position: relative;
+		padding-bottom: 56.28%; /* 16:9 비율인 경우 */
+		/* padding-bottom값은 4:3 비율인 경우 75%로 설정합니다 */
+		padding-top: 25px;
+		height: 0;
+	}
+
+	.videowrapper iframe {
+		position: absolute;
+		top: 2%;
+		left: 25%;
+		width: 50%;
+		height: 50%;
+	}
+
+	#boardTable{
+		float:left;
+		width:35%;
+		position: absolute;
+		top: 88%;
+		left: 14%;
+		text-align: center;
+	}#eventTable{
+		float:right;
+		width:30%;
+		position: absolute;
+		top: 88%;
+		left: 51%;
+		text-align: center;
+	}
+	.movieTable td{
+		text-align: center;
+		
+	}
+	.movieTable{
+		margin-top: 20px;
+	}
+	.movieTable2{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.movieTable2 .tt{
+		text-align: center;
+	}
+	#mainBottom{
+		padding: 10px;
+		background-color: #013C4D;
+		text-align: center;
+		color: #D5441C;
+	}
+	#mainBottom a{
+		text-decoration: none;
+		color: #D5441C;
+	}
+	.mpTable .tt {
+		text-align: center;
+	}
+	.mpTable a{
+		text-decoration: none;
+		color: #013C4D;
+	}

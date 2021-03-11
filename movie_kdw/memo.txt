@@ -1,0 +1,132 @@
+drop table moviemembers;
+drop sequence moviememberseq;
+
+create table moviemembers(
+	num int primary key,
+	id varchar2(20) not null,
+	password varchar2(20) not null,
+	name varchar2(20) not null,
+	birth varchar2(20),
+	email varchar2(20) not null,
+	ssn1 int not null,
+	ssn2 int not null	
+);
+
+create sequence moviememberseq
+	increment by 1
+	start with 1
+	minvalue 1
+	nocache;
+	
+drop table dkmovie;
+drop sequence dkmovieseq;
+
+create sequence dkmovieseq
+	increment by 1
+	start with 1
+	minvalue 1
+	nocache;
+	
+create table dkmovie(
+	movienum int primary key,
+	theater varchar2(100) not null,
+	title varchar2(50) not null,
+	director varchar2(50) not null,
+	actor varchar2(50) not null,
+	poster varchar2(20) not null,
+	openDate varchar2(20) not null,	
+	closeDate varchar2(20) not null,	
+	runtime varchar2(20) not null
+);
+	
+drop table dktheater;
+drop sequence dktheaterseq;
+	create sequence dktheaterseq
+	increment by 1
+	start with 1
+	minvalue 1
+	nocache;
+	
+create table dktheater(
+	num int primary key,
+	location varchar2(20) not null,
+	multiplexnum int not null,
+	seatnum int not null
+);
+
+create sequence bookingmovieseq
+	increment by 1
+	start with 1
+	minvalue 1
+	nocache;
+drop table bookingmovie;	
+create table bookingmovie(
+	bookingnum int primary key,
+	id varchar2(20) not null,
+	paytime varchar2(20) not null,
+	mnum int not null,
+	bookingDate varchar2(20) not null,
+	time varchar2(50) not null,
+	seat varchar2(20) not null,
+	price int not null
+);
+
+
+drop table dkmovieboard;
+create table dkmovieboard( 
+	boardNum number not null primary key,
+	writer varchar2(20) not null,
+	boardTitle varchar2(20) not null,
+	boardpw varchar2(20) not null,
+	writedate varchar2(20) not null,
+	readcount int default 0,
+	bta varchar2(1000) not null,
+	starPoint int not null,
+	ref number not null,
+	re_step number not null,
+	re_level number not null
+);
+
+drop sequence dkmovieboardseq;
+create sequence dkmovieboardseq
+  increment by 1
+  start with 1
+  minvalue 1
+  maxvalue 10000
+  nocache;
+  
+drop sequence dkmoviepreviewseq;
+create sequence dkmoviepreviewseq
+	increment by 1
+	start with 1
+	minvalue 1
+	nocache;
+	
+drop table dkmoviepreview;	
+create table dkmoviepreview(
+	previewnum int primary key,
+	theater varchar2(20) not null,
+	title varchar2(20) not null,
+	link varchar2(100) not null
+);
+
+drop table eventboard;
+create table eventboard( 
+	boardNum number not null primary key,
+	boardTitle varchar2(20) not null,
+	writedate varchar2(20) not null,
+	readcount int default 0,
+	bta varchar2(1000) not null
+);
+
+drop sequence eventboardseq;
+create sequence eventboardseq
+  increment by 1
+  start with 1
+  minvalue 1
+  maxvalue 10000
+  nocache;
+
+@@@@@@@@ customer폴더의  main.jsp에서 시작하시면됩니다.  admin으로 회원가입하시고 로그인하시면 관리자페이지를 보실수 있습니다.@@@@@@@@ 
+
+

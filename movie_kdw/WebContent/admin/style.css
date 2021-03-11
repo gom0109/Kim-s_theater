@@ -1,0 +1,75 @@
+/*style.css
+/*표준 글꼴 서식 스타일*/
+#mbar a{
+		text-decoration: none;
+		color: #D5441C;
+		
+	}
+	#mbar>td{
+		background-color:#013C4D;
+	}
+	#log a{
+		text-decoration: none;
+		color:  #D5441C;
+		font-weight: bold;
+	}
+	table{
+		margin: auto;
+		border-collapse: collapse;
+	}
+	body{
+		background-color: lightyellow;
+	}
+	#log{
+		padding: 1%
+	}
+	.tt{
+	   	color: #D5441C;
+	   	font-weight: bold;
+    	background-color: #013C4D;
+    	
+    }
+    .t2{
+    	color: #013C4D;
+    		
+    }
+    #boardTable{
+    	text-align: center;
+    }
+    #mainBottom{
+		padding: 10px;
+		background-color: #013C4D;
+		text-align: center;
+		color: #D5441C;
+	}
+	.movieTable{
+		margin-top: 20px;
+	}
+	.movieTable td{
+		text-align: center;	
+	}
+	.movieTable a{
+		text-decoration: none;
+    	color: #D5441C;
+	}
+	.movieTable2{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.movieTable2 .tt{
+		text-align: center;
+	}
+	.movieTable2 a{
+		text-decoration: none;
+    	color: #D5441C;
+	}
+	
+	.mpTable .tt {
+		text-align: center;
+	}
+	.mpTable a{
+		text-decoration: none;
+    	color: #D5441C;
+	}
+	
+
